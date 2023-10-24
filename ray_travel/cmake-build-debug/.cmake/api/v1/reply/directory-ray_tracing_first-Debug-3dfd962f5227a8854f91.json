@@ -1,0 +1,53 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install",
+			"_finalize_target"
+		],
+		"files" : 
+		[
+			"E:/code/own_project/RayTracing_Learn/nvpro_core/cmake/setup.cmake",
+			"ray_tracing_first/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 73,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 962,
+				"parent" : 1
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "bin_x64_debug",
+			"paths" : 
+			[
+				"E:/code/own_project/RayTracing_Learn/bin_x64/Debug/vk_ray_tracing_first_KHR.exe"
+			],
+			"targetId" : "vk_ray_tracing_first_KHR::@e76e32cb1c5ee23f8821",
+			"targetIndex" : 5,
+			"type" : "target"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "ray_tracing_first",
+		"source" : "ray_tracing_first"
+	}
+}

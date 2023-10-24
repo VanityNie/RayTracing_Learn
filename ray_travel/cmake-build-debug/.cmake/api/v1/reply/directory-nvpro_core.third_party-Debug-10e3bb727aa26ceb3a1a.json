@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "nvpro_core/third_party",
+		"source" : "E:/code/own_project/RayTracing_Learn/nvpro_core/third_party"
+	}
+}

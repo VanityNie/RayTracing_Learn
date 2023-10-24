@@ -1,0 +1,1903 @@
+{
+	"archive" : {},
+	"artifacts" : 
+	[
+		{
+			"path" : "E:/code/own_project/RayTracing_Learn/bin_x64/Debug/libnvpro_core_vk.a"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"target_link_libraries",
+			"target_compile_definitions",
+			"add_definitions",
+			"include",
+			"_add_package_VulkanSDK",
+			"include_directories",
+			"_add_package_ImGUI",
+			"target_precompile_headers"
+		],
+		"files" : 
+		[
+			"E:/code/own_project/RayTracing_Learn/nvpro_core/CMakeLists.txt",
+			"E:/code/own_project/RayTracing_Learn/nvpro_core/cmake/setup.cmake",
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 212,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 253,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 250,
+				"parent" : 0
+			},
+			{
+				"file" : 2
+			},
+			{
+				"command" : 4,
+				"file" : 2,
+				"line" : 19,
+				"parent" : 4
+			},
+			{
+				"file" : 1,
+				"parent" : 5
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 170,
+				"parent" : 6
+			},
+			{
+				"command" : 5,
+				"file" : 2,
+				"line" : 34,
+				"parent" : 4
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 377,
+				"parent" : 8
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 72,
+				"parent" : 6
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 379,
+				"parent" : 8
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 117,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 381,
+				"parent" : 8
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 245,
+				"parent" : 0
+			},
+			{
+				"command" : 6,
+				"file" : 1,
+				"line" : 75,
+				"parent" : 6
+			},
+			{
+				"command" : 6,
+				"file" : 1,
+				"line" : 396,
+				"parent" : 8
+			},
+			{
+				"command" : 7,
+				"file" : 2,
+				"line" : 35,
+				"parent" : 4
+			},
+			{
+				"command" : 6,
+				"file" : 1,
+				"line" : 272,
+				"parent" : 17
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 145,
+				"parent" : 0
+			},
+			{
+				"command" : 8,
+				"file" : 0,
+				"line" : 234,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g -fdiagnostics-color=always"
+				},
+				{
+					"fragment" : "-std=gnu++17"
+				},
+				{
+					"fragment" : "-Winvalid-pch -x c++-header -include E:/code/own_project/RayTracing_Learn/ray_travel/cmake-build-debug/nvpro_core/CMakeFiles/nvpro_core.dir/cmake_pch.hxx"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 3,
+					"define" : "IMGUI_DEFINE_MATH_OPERATORS"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "NOMINMAX"
+				},
+				{
+					"backtrace" : 9,
+					"define" : "NVP_SUPPORTS_VULKANSDK"
+				},
+				{
+					"backtrace" : 10,
+					"define" : "RESOURCE_DIRECTORY=\"E:/code/own_project/RayTracing_Learn/nvpro_core/resources/\""
+				},
+				{
+					"backtrace" : 11,
+					"define" : "VK_ENABLE_BETA_EXTENSIONS"
+				},
+				{
+					"backtrace" : 12,
+					"define" : "VK_USE_PLATFORM_WIN32_KHR"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "VMA_VULKAN_VERSION=1002000"
+				},
+				{
+					"backtrace" : 13,
+					"define" : "VULKAN_HPP_DISPATCH_LOADER_DYNAMIC=1"
+				},
+				{
+					"backtrace" : 14,
+					"define" : "WIN32_LEAN_AND_MEAN"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"path" : "E:/code/own_project/RayTracing_Learn/ray_travel/cmake-build-debug/nvpro_core"
+				},
+				{
+					"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core"
+				},
+				{
+					"backtrace" : 15,
+					"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvp"
+				},
+				{
+					"backtrace" : 16,
+					"path" : "D:/code_env/vulkan/Include"
+				},
+				{
+					"backtrace" : 18,
+					"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/imgui"
+				},
+				{
+					"backtrace" : 19,
+					"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/imgui/backends"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/third_party/glfw/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/third_party/imgui"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/third_party/fmt/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/third_party/stb"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/third_party/tinygltf"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/third_party/tinyobjloader"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/third_party/cgltf"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/third_party/vma/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/third_party/NVTX/c/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/third_party/dxh/include/directx"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					1
+				],
+				"standard" : "17"
+			},
+			"precompileHeaders" : 
+			[
+				{
+					"backtrace" : 20,
+					"header" : "<algorithm>"
+				},
+				{
+					"backtrace" : 20,
+					"header" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvh/nvprint.hpp"
+				}
+			],
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g -fdiagnostics-color=always"
+				},
+				{
+					"fragment" : "-std=gnu++17"
+				},
+				{
+					"fragment" : "-Winvalid-pch -include E:/code/own_project/RayTracing_Learn/ray_travel/cmake-build-debug/nvpro_core/CMakeFiles/nvpro_core.dir/cmake_pch.hxx"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 3,
+					"define" : "IMGUI_DEFINE_MATH_OPERATORS"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "NOMINMAX"
+				},
+				{
+					"backtrace" : 9,
+					"define" : "NVP_SUPPORTS_VULKANSDK"
+				},
+				{
+					"backtrace" : 10,
+					"define" : "RESOURCE_DIRECTORY=\"E:/code/own_project/RayTracing_Learn/nvpro_core/resources/\""
+				},
+				{
+					"backtrace" : 11,
+					"define" : "VK_ENABLE_BETA_EXTENSIONS"
+				},
+				{
+					"backtrace" : 12,
+					"define" : "VK_USE_PLATFORM_WIN32_KHR"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "VMA_VULKAN_VERSION=1002000"
+				},
+				{
+					"backtrace" : 13,
+					"define" : "VULKAN_HPP_DISPATCH_LOADER_DYNAMIC=1"
+				},
+				{
+					"backtrace" : 14,
+					"define" : "WIN32_LEAN_AND_MEAN"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"path" : "E:/code/own_project/RayTracing_Learn/ray_travel/cmake-build-debug/nvpro_core"
+				},
+				{
+					"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core"
+				},
+				{
+					"backtrace" : 15,
+					"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvp"
+				},
+				{
+					"backtrace" : 16,
+					"path" : "D:/code_env/vulkan/Include"
+				},
+				{
+					"backtrace" : 18,
+					"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/imgui"
+				},
+				{
+					"backtrace" : 19,
+					"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/imgui/backends"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/third_party/glfw/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/third_party/imgui"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/third_party/fmt/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/third_party/stb"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/third_party/tinygltf"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/third_party/tinyobjloader"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/third_party/cgltf"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/third_party/vma/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/third_party/NVTX/c/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/third_party/dxh/include/directx"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					1
+				],
+				"standard" : "17"
+			},
+			"precompileHeaders" : 
+			[
+				{
+					"backtrace" : 20,
+					"header" : "<algorithm>"
+				},
+				{
+					"backtrace" : 20,
+					"header" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvh/nvprint.hpp"
+				}
+			],
+			"sourceIndexes" : 
+			[
+				3,
+				5,
+				10,
+				14,
+				18,
+				23,
+				26,
+				28,
+				30,
+				33,
+				43,
+				45,
+				47,
+				49,
+				51,
+				53,
+				55,
+				61,
+				65,
+				68,
+				70,
+				72,
+				75,
+				76,
+				79,
+				81,
+				84,
+				86,
+				88,
+				90,
+				92,
+				94,
+				96,
+				98,
+				100,
+				103,
+				107,
+				109,
+				112,
+				114,
+				117,
+				119,
+				121,
+				123,
+				125,
+				127,
+				129,
+				132,
+				135,
+				138,
+				140,
+				142,
+				145,
+				147,
+				149,
+				156,
+				159,
+				161,
+				163,
+				165,
+				167,
+				171,
+				173
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "imgui::@5b01a53f2adf05ebbe89"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "fmt::@5b01a53f2adf05ebbe89"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "glfw::@e69911e41cbbc987498e"
+		}
+	],
+	"id" : "nvpro_core::@ab9da236d811a907ec30",
+	"name" : "nvpro_core",
+	"nameOnDisk" : "libnvpro_core_vk.a",
+	"paths" : 
+	{
+		"build" : "nvpro_core",
+		"source" : "E:/code/own_project/RayTracing_Learn/nvpro_core"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "nvh",
+			"sourceIndexes" : 
+			[
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				32,
+				33,
+				34,
+				35,
+				36,
+				37
+			]
+		},
+		{
+			"name" : "nvmath",
+			"sourceIndexes" : 
+			[
+				38,
+				39,
+				40,
+				41,
+				42
+			]
+		},
+		{
+			"name" : "imgui",
+			"sourceIndexes" : 
+			[
+				43,
+				44,
+				45,
+				46,
+				47,
+				48,
+				49,
+				50,
+				51,
+				52,
+				53,
+				54,
+				55,
+				56
+			]
+		},
+		{
+			"name" : "fileformats",
+			"sourceIndexes" : 
+			[
+				57,
+				58,
+				59,
+				60,
+				61,
+				62,
+				63,
+				64,
+				65,
+				66,
+				67
+			]
+		},
+		{
+			"name" : "nvp",
+			"sourceIndexes" : 
+			[
+				68,
+				69,
+				70,
+				71,
+				72,
+				73,
+				74,
+				75
+			]
+		},
+		{
+			"name" : "nvvk",
+			"sourceIndexes" : 
+			[
+				76,
+				77,
+				78,
+				79,
+				80,
+				81,
+				82,
+				83,
+				84,
+				85,
+				86,
+				87,
+				88,
+				89,
+				90,
+				91,
+				92,
+				93,
+				94,
+				95,
+				96,
+				97,
+				98,
+				99,
+				100,
+				101,
+				102,
+				103,
+				104,
+				105,
+				106,
+				107,
+				108,
+				109,
+				110,
+				111,
+				112,
+				113,
+				114,
+				115,
+				116,
+				117,
+				118,
+				119,
+				120,
+				121,
+				122,
+				123,
+				124,
+				125,
+				126,
+				127,
+				128,
+				129,
+				130,
+				131,
+				132,
+				133,
+				134,
+				135,
+				136,
+				137,
+				138,
+				139,
+				140,
+				141,
+				142,
+				143
+			]
+		},
+		{
+			"name" : "nvvkhl",
+			"sourceIndexes" : 
+			[
+				144,
+				145,
+				146,
+				147,
+				148,
+				149,
+				150,
+				151,
+				152,
+				153,
+				154,
+				155,
+				156,
+				157,
+				158,
+				159,
+				160,
+				161,
+				162,
+				163,
+				164,
+				165,
+				166,
+				167,
+				168,
+				169,
+				170,
+				171,
+				172,
+				173,
+				174
+			]
+		},
+		{
+			"name" : "nvvkhl\\shaders",
+			"sourceIndexes" : 
+			[
+				175,
+				176,
+				177,
+				178,
+				179,
+				180,
+				181,
+				182,
+				183,
+				184,
+				185,
+				186,
+				187,
+				188,
+				189,
+				190,
+				191,
+				192,
+				193,
+				194,
+				195,
+				196,
+				197,
+				198,
+				199
+			]
+		},
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				200,
+				202,
+				203,
+				204,
+				205,
+				206
+			]
+		},
+		{
+			"name" : "Precompile Header File",
+			"sourceIndexes" : 
+			[
+				201
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 0,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-debug/nvpro_core/CMakeFiles/nvpro_core.dir/cmake_pch.hxx.cxx",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvh/alignment.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvh/appwindowcamerainertia.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvh/appwindowprofiler.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvh/appwindowprofiler.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvh/bitarray.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvh/bitarray.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvh/boundingbox.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvh/cameracontrol.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvh/camerainertia.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvh/cameramanipulator.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvh/cameramanipulator.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvh/commandlineparser.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvh/container_utils.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvh/filemapping.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvh/filemapping.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvh/fileoperations.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvh/geometry.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvh/gltfscene.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvh/gltfscene.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvh/inputparser.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvh/misc.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvh/nsightevents.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvh/nvprint.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvh/nvprint.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvh/parallel_work.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvh/parametertools.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvh/parametertools.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvh/primitives.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvh/primitives.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvh/profiler.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvh/profiler.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvh/radixsort.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvh/shaderfilemanager.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvh/shaderfilemanager.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvh/threading.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvh/timesampler.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvh/trangeallocator.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvmath/nvmath.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvmath/nvmath.inl",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvmath/nvmath_glsltypes.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvmath/nvmath_hlsltypes.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvmath/nvmath_types.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/imgui/imgui_axis.cpp",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/imgui/imgui_axis.hpp",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/imgui/imgui_camera_widget.cpp",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/imgui/imgui_camera_widget.h",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/imgui/imgui_helper.cpp",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/imgui/imgui_helper.h",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/imgui/imgui_orient.cpp",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/imgui/imgui_orient.h",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/third_party/imgui/backends/imgui_impl_glfw.cpp",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/third_party/imgui/backends/imgui_impl_glfw.h",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/imgui/backends/imgui_vk_extra.cpp",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/imgui/backends/imgui_vk_extra.h",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/imgui/backends/imgui_impl_vulkan.cpp",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/imgui/backends/imgui_impl_vulkan.h",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/fileformats/bmp.hpp",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/fileformats/cadscenefile.h",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/fileformats/cadscenefile.inl",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/fileformats/khr_df.h",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/fileformats/nv_dds.cpp",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/fileformats/nv_dds.h",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/fileformats/nv_ktx.h",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/fileformats/nv_ktx.inl",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/fileformats/tiny_converter.cpp",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/fileformats/tiny_converter.hpp",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/fileformats/tiny_gltf_freeimage.h",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvp/nvpwindow.cpp",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvp/nvpwindow.hpp",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvp/nvpsystem.cpp",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvp/nvpsystem.hpp",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvp/nvpfilesystem.cpp",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvp/nvpfilesystem.hpp",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvp/perproject_globals.hpp",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvp/nvpsystem_win32.cpp",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvk/appwindowprofiler_vk.cpp",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvk/appwindowprofiler_vk.hpp",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvk/buffers_vk.hpp",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvk/buffersuballocator_vk.cpp",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvk/buffersuballocator_vk.hpp",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvk/commands_vk.cpp",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvk/commands_vk.hpp",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvk/compute_vk.hpp",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvk/context_vk.cpp",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvk/context_vk.hpp",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvk/debug_util_vk.cpp",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvk/debug_util_vk.hpp",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvk/descriptorsets_vk.cpp",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvk/descriptorsets_vk.hpp",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvk/dynamicrendering_vk.cpp",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvk/dynamicrendering_vk.hpp",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvk/error_vk.cpp",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvk/error_vk.hpp",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvk/extensions_vk.cpp",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvk/extensions_vk.hpp",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvk/gizmos_vk.cpp",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvk/gizmos_vk.hpp",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvk/images_vk.cpp",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvk/images_vk.hpp",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvk/memallocator_dedicated_vk.cpp",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvk/memallocator_dedicated_vk.hpp",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvk/memallocator_dma_vk.hpp",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvk/memallocator_vk.cpp",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvk/memallocator_vk.hpp",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvk/memallocator_vma_vk.hpp",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvk/memallocator_vma_vk.inl",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvk/memorymanagement_vk.cpp",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvk/memorymanagement_vk.hpp",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvk/memorymanagement_vkgl.cpp",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvk/memorymanagement_vkgl.hpp",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvk/nsight_aftermath_vk.hpp",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvk/pipeline_vk.cpp",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvk/pipeline_vk.hpp",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvk/profiler_vk.cpp",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvk/profiler_vk.hpp",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvk/raypicker_vk.hpp",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvk/raytraceKHR_vk.cpp",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvk/raytraceKHR_vk.hpp",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvk/raytraceNV_vk.cpp",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvk/raytraceNV_vk.hpp",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvk/renderpasses_vk.cpp",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvk/renderpasses_vk.hpp",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvk/resourceallocator_vk.cpp",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvk/resourceallocator_vk.hpp",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvk/samplers_vk.cpp",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvk/samplers_vk.hpp",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvk/sbtwrapper_vk.cpp",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvk/sbtwrapper_vk.hpp",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvk/shadermodulemanager_vk.cpp",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvk/shadermodulemanager_vk.hpp",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvk/shaders_vk.hpp",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvk/sparse_image_vk.cpp",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvk/sparse_image_vk.hpp",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvk/specialization.hpp",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvk/stagingmemorymanager_vk.cpp",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvk/stagingmemorymanager_vk.hpp",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvk/structs_vk.hpp",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvk/swapchain_vk.cpp",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvk/swapchain_vk.hpp",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvk/vulkanhppsupport.cpp",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvk/vulkanhppsupport.hpp",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvk/vulkanhppsupport_vkgl.cpp",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvk/vulkanhppsupport_vkgl.hpp",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvkhl/alloc_vma.hpp",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvkhl/appbase_vk.cpp",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvkhl/appbase_vk.hpp",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvkhl/appbase_vkpp.cpp",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvkhl/appbase_vkpp.hpp",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvkhl/application.cpp",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvkhl/application.hpp",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvkhl/element_camera.hpp",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvkhl/element_dbgprintf.hpp",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvkhl/element_gui.hpp",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvkhl/element_logger.hpp",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvkhl/element_testing.hpp",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvkhl/gbuffer.cpp",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvkhl/gbuffer.hpp",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvkhl/glsl_compiler.hpp",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvkhl/gltf_scene.cpp",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvkhl/gltf_scene.hpp",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvkhl/gltf_scene_rtx.cpp",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvkhl/gltf_scene_rtx.hpp",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvkhl/gltf_scene_vk.cpp",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvkhl/gltf_scene_vk.hpp",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvkhl/hdr_env.cpp",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvkhl/hdr_env.hpp",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvkhl/hdr_env_dome.cpp",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvkhl/hdr_env_dome.hpp",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvkhl/pipeline_container.hpp",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvkhl/scene_camera.hpp",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvkhl/sky.cpp",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvkhl/sky.hpp",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvkhl/tonemap_postprocess.cpp",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvkhl/tonemap_postprocess.hpp",
+			"sourceGroupIndex" : 7
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvkhl/shaders/hdr_dome.comp",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvkhl/shaders/hdr_integrate_brdf.comp",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvkhl/shaders/hdr_prefilter_diffuse.comp",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvkhl/shaders/hdr_prefilter_glossy.comp",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvkhl/shaders/passthrough.vert",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvkhl/shaders/sky.comp",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvkhl/shaders/tonemapper.comp",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvkhl/shaders/tonemapper.frag",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvkhl/shaders/bsdf_functions.h",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvkhl/shaders/bsdf_structs.h",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvkhl/shaders/constants.glsl",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvkhl/shaders/dh_comp.h",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvkhl/shaders/dh_hdr.h",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvkhl/shaders/dh_lighting.h",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvkhl/shaders/dh_scn_desc.h",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvkhl/shaders/dh_sky.h",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvkhl/shaders/dh_tonemap.h",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvkhl/shaders/func.glsl",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvkhl/shaders/ggx.glsl",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvkhl/shaders/hdr_env_sampling.glsl",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvkhl/shaders/light_contrib.glsl",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvkhl/shaders/pbr_mat_eval.glsl",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvkhl/shaders/pbr_mat_struct.h",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvkhl/shaders/random.glsl",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 1,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/nvvkhl/shaders/ray_util.glsl",
+			"sourceGroupIndex" : 8
+		},
+		{
+			"backtrace" : 1,
+			"path" : "D:/code_env/vulkan/Include/vulkan/vulkan_core.h",
+			"sourceGroupIndex" : 9
+		},
+		{
+			"backtrace" : 0,
+			"path" : "cmake-build-debug/nvpro_core/CMakeFiles/nvpro_core.dir/cmake_pch.hxx",
+			"sourceGroupIndex" : 10
+		},
+		{
+			"backtrace" : 2,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/third_party/tinygltf/tiny_gltf.h",
+			"sourceGroupIndex" : 9
+		},
+		{
+			"backtrace" : 2,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/third_party/tinygltf/json.hpp",
+			"sourceGroupIndex" : 9
+		},
+		{
+			"backtrace" : 2,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/third_party/tinyobjloader/tiny_obj_loader.h",
+			"sourceGroupIndex" : 9
+		},
+		{
+			"backtrace" : 2,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/third_party/vma/include/vk_mem_alloc.h",
+			"sourceGroupIndex" : 9
+		},
+		{
+			"backtrace" : 2,
+			"path" : "E:/code/own_project/RayTracing_Learn/nvpro_core/third_party/NVTX/c/include/nvtx3/nvToolsExt.h",
+			"sourceGroupIndex" : 9
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}
