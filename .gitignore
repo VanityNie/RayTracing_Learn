@@ -9,3 +9,59 @@ install_manifest.txt
 compile_commands.json
 CTestTestfile.cmake
 _deps
+
+# Exclude compiled object files
+*.o
+*.a
+*.so
+
+# Exclude libraries  
+*/lib/
+
+# Exclude cmake generated files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+CMakeLists.txt.user
+
+# Exclude cmake build directories
+build/
+
+# Exclude IDE config files 
+.idea/
+.ccls-cache/
+*.iml
+
+# Exclude Mac OS metadata 
+.DS_Store
+
+# Exclude executable and zipped project files
+*.exe 
+*.zip
+
+# Exclude temporary files
+*.tmp
+
+# Exclude personal notes
+notes.txt
+
+# Custom rules
+debug/
+release/
+ipch/
+*.kdev4
+*.suo
+*.ntvs*
+*.ncb
+*.user
+*.aps
+*.pch
+*.vspscc
+*_i.c
+*_p.c
+*.plist
+*.vcxproj.user
+*.sln.docstates
+*.json
+*.log
