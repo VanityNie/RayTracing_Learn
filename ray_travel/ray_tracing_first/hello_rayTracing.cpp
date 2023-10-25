@@ -32,5 +32,26 @@ struct ObjModel
 
 
 
+class HelloRayTracing
+{
+
+public:
+
+    // read obj Model and translate to vk Gemorty info
+    auto objectToVkGemortyKHR(const ObjModel& model);
+    // create bottom Acceleration Structure
+    void createBottomLevelAS();
+
+
+};
+
+auto HelloRayTracing::objectToVkGemortyKHR(const ObjModel &model) {
+    return nullptr;
+}
+
+void HelloRayTracing::createBottomLevelAS() {
+
+}
+
 
 #endif //VK_RAYTRACING_TUTORIAL_HELLO_RAYTRACING_H
