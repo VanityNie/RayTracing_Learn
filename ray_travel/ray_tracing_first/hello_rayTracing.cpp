@@ -33,6 +33,11 @@ struct ObjModel
 };
 
 
+struct ObjInstance
+{
+    nvmath::mat4f transform;    // Matrix of the instance
+    uint32_t      objIndex{0};  // Model index reference
+};
 
 class HelloRayTracing
 {
@@ -44,7 +49,12 @@ private:
     nvvk::RaytracingBuilderKHR m_rtBuilder;
     nvvk::ResourceAllocator m_alloc;
     uint32_t m_graphicsQueueIndex;
+
+
+    //Array of objects and instances
     std::vector<ObjModel> m_objModel;
+    std::vector<ObjInstance>m_instances;
+
 public:
 
 
@@ -53,6 +63,8 @@ public:
     auto objectToVkGemortyKHR(const ObjModel& model);
     // create bottom Acceleration Structure
     void createBottomLevelAS();
+    void createTopLevelAS();
+
 
 };
 
@@ -129,6 +141,7 @@ auto HelloRayTracing::objectToVkGemortyKHR(const ObjModel &model) {
 void HelloRayTracing::createBottomLevelAS()
 {
 
+
     std::vector<nvvk::RaytracingBuilderKHR::BlasInput> allBlas;
 
     allBlas.resize(m_objModel.size());
@@ -144,5 +157,25 @@ void HelloRayTracing::createBottomLevelAS()
     m_rtBuilder.buildBlas(allBlas,VK_BUILD_ACCELERATION_STRUCTURE_PREFER_FAST_TRACE_BIT_KHR);
 }
 
+
+
+void HelloRayTracing::createTopLevelAS()
+{
+    std::vector<VkAccelerationStructureInstanceKHR> tlas;
+    tlas.resize(m_instances.size());
+
+    for(const auto & inst : m_instances)
+    {
+        VkAccelerationStructureInstanceKHR rayInst{};
+        rayInst.transform = nvvk::toTransformMatrixKHR(inst.transform);  // Position of the instance
+        rayInst.instanceCustomIndex = inst.objIndex;
+        rayInst.accelerationStructureReference = m_rtBuilder.getBlasDeviceAddress(inst.objIndex);
+        rayInst.flags                          = VK_GEOMETRY_INSTANCE_TRIANGLE_FACING_CULL_DISABLE_BIT_KHR;
+        rayInst.mask                           = 0xFF;       //  Only be hit if rayMask & instance.mask != 0
+        rayInst.instanceShaderBindingTableRecordOffset = 0;  // We will use the same hit group for all objects
+        tlas.emplace_back(rayInst);
+        m_rtBuilder.buildTlas(tlas, VK_BUILD_ACCELERATION_STRUCTURE_PREFER_FAST_TRACE_BIT_KHR);
+    }
+}
 
 #endif //VK_RAYTRACING_TUTORIAL_HELLO_RAYTRACING_CPP
