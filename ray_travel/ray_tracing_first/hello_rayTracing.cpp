@@ -13,13 +13,14 @@
 
 #define STB_IMAGE_IMPLEMENTATION
 
+
 #include "nvvkhl/appbase_vk.hpp"
 #include "nvvk/debug_util_vk.hpp"
 #include "nvvk/descriptorsets_vk.hpp"
 #include "nvvk/memallocator_dma_vk.hpp"
 #include "nvvk/resourceallocator_vk.hpp"
-
-
+#include "nvvk/raytraceNV_vk.hpp"
+#include "host_device.h"
 
 // The OBJ model
 struct ObjModel
@@ -54,6 +55,20 @@ private:
     //Array of objects and instances
     std::vector<ObjModel> m_objModel;
     std::vector<ObjInstance>m_instances;
+
+
+
+    //Descriptor set
+    nvvk::DescriptorSetBindings m_rtDescSetLayoutBind;
+    VkDescriptorPool  m_rtDescPool;
+    VkDescriptorSetLayout m_rtDescSetLayout;
+    VkDescriptorSet m_rtDescSet;
+
+    void createRtDescriptorSet();
+
+
+    nvvk::Texture  m_offscreenColor;
+
 
 public:
 
@@ -157,6 +172,42 @@ void HelloRayTracing::createBottomLevelAS()
     m_rtBuilder.buildBlas(allBlas,VK_BUILD_ACCELERATION_STRUCTURE_PREFER_FAST_TRACE_BIT_KHR);
 }
 
+
+
+/**
+ * @brief create ray tracing descriptor set to hold the Acceleration structure and the output image
+ */
+
+void HelloRayTracing::createRtDescriptorSet() {
+
+    m_rtDescSetLayoutBind.addBinding(RtxBindings::eTlas, VK_DESCRIPTOR_TYPE_ACCELERATION_STRUCTURE_KHR, 1,
+                                     VK_SHADER_STAGE_RAYGEN_BIT_KHR | VK_SHADER_STAGE_CLOSEST_HIT_BIT_KHR);  // TLAS
+    m_rtDescSetLayoutBind.addBinding(RtxBindings::eOutImage, VK_DESCRIPTOR_TYPE_STORAGE_IMAGE, 1,
+                                     VK_SHADER_STAGE_RAYGEN_BIT_KHR);  // Output image
+
+    m_rtDescPool      = m_rtDescSetLayoutBind.createPool(m_device);
+    m_rtDescSetLayout = m_rtDescSetLayoutBind.createLayout(m_device);
+
+    VkDescriptorSetAllocateInfo allocateInfo{VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO};
+    allocateInfo.descriptorPool     = m_rtDescPool;
+    allocateInfo.descriptorSetCount = 1;
+    allocateInfo.pSetLayouts        = &m_rtDescSetLayout;
+    vkAllocateDescriptorSets(m_device, &allocateInfo, &m_rtDescSet);
+
+
+    VkAccelerationStructureKHR  tlas = m_rtBuilder.getAccelerationStructure();
+    VkWriteDescriptorSetAccelerationStructureKHR descASInfo{ VK_STRUCTURE_TYPE_WRITE_DESCRIPTOR_SET_ACCELERATION_STRUCTURE_KHR};
+    descASInfo.accelerationStructureCount = 1;
+    descASInfo.pAccelerationStructures    = &tlas;
+    VkDescriptorImageInfo imageInfo{{}, m_offscreenColor.descriptor.imageView, VK_IMAGE_LAYOUT_GENERAL};
+
+
+    std::vector<VkWriteDescriptorSet> writes;
+    writes.emplace_back(m_rtDescSetLayoutBind.makeWrite(m_rtDescSet, RtxBindings::eTlas, &descASInfo));
+    writes.emplace_back(m_rtDescSetLayoutBind.makeWrite(m_rtDescSet, RtxBindings::eOutImage, &imageInfo));
+    vkUpdateDescriptorSets(m_device, static_cast<uint32_t>(writes.size()), writes.data(), 0, nullptr);
+
+}
 
 
 void HelloRayTracing::createTopLevelAS()
