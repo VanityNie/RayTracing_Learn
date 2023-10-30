@@ -60,9 +60,12 @@ private:
 
     //Descriptor set
     nvvk::DescriptorSetBindings m_rtDescSetLayoutBind;
+    nvvk::DescriptorSetBindings m_descSetLayoutBind;
     VkDescriptorPool  m_rtDescPool;
     VkDescriptorSetLayout m_rtDescSetLayout;
+    VkDescriptorSetLayout m_descSetLayout;
     VkDescriptorSet m_rtDescSet;
+
 
     void createRtDescriptorSet();
 
@@ -195,6 +198,9 @@ void HelloRayTracing::createRtDescriptorSet() {
     vkAllocateDescriptorSets(m_device, &allocateInfo, &m_rtDescSet);
 
 
+
+
+    //prepare the write data for ray tracing descriptor : TLAS and Image
     VkAccelerationStructureKHR  tlas = m_rtBuilder.getAccelerationStructure();
     VkWriteDescriptorSetAccelerationStructureKHR descASInfo{ VK_STRUCTURE_TYPE_WRITE_DESCRIPTOR_SET_ACCELERATION_STRUCTURE_KHR};
     descASInfo.accelerationStructureCount = 1;
@@ -206,6 +212,19 @@ void HelloRayTracing::createRtDescriptorSet() {
     writes.emplace_back(m_rtDescSetLayoutBind.makeWrite(m_rtDescSet, RtxBindings::eTlas, &descASInfo));
     writes.emplace_back(m_rtDescSetLayoutBind.makeWrite(m_rtDescSet, RtxBindings::eOutImage, &imageInfo));
     vkUpdateDescriptorSets(m_device, static_cast<uint32_t>(writes.size()), writes.data(), 0, nullptr);
+
+
+
+    // Camera matrices
+    m_descSetLayoutBind.addBinding(SceneBindings::eGlobals, VK_DESCRIPTOR_TYPE_UNIFORM_BUFFER, 1,
+                                   VK_SHADER_STAGE_VERTEX_BIT | VK_SHADER_STAGE_RAYGEN_BIT_KHR);
+// Obj descriptions
+    m_descSetLayoutBind.addBinding(SceneBindings::eObjDescs, VK_DESCRIPTOR_TYPE_STORAGE_BUFFER, 1,
+                                   VK_SHADER_STAGE_VERTEX_BIT | VK_SHADER_STAGE_FRAGMENT_BIT | VK_SHADER_STAGE_CLOSEST_HIT_BIT_KHR);
+// Textures
+    m_descSetLayoutBind.addBinding(SceneBindings::eTextures, VK_DESCRIPTOR_TYPE_COMBINED_IMAGE_SAMPLER, nbTxt,
+                                   VK_SHADER_STAGE_FRAGMENT_BIT | VK_SHADER_STAGE_CLOSEST_HIT_BIT_KHR);
+
 
 }
 
