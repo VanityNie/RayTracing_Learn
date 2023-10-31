@@ -34,6 +34,16 @@ struct ObjModel
 };
 
 
+struct PushConstantRay
+{
+    vec4  clearColor;
+    vec3  lightPosition;
+    float lightIntensity;
+    int   lightType;
+};
+
+
+
 struct ObjInstance
 {
     nvmath::mat4f transform;    // Matrix of the instance
@@ -50,6 +60,9 @@ private:
     nvvk::RaytracingBuilderKHR m_rtBuilder;
     nvvk::ResourceAllocator m_alloc;
     uint32_t m_graphicsQueueIndex;
+
+    // vector of all textures of the scene
+    std::vector<nvvk::Texture> m_textures;
 
 
     //Array of objects and instances
@@ -68,7 +81,7 @@ private:
 
 
     void createRtDescriptorSet();
-
+    void updateRtDescriptorSet();
 
     nvvk::Texture  m_offscreenColor;
 
@@ -214,15 +227,16 @@ void HelloRayTracing::createRtDescriptorSet() {
     vkUpdateDescriptorSets(m_device, static_cast<uint32_t>(writes.size()), writes.data(), 0, nullptr);
 
 
+    auto nbTxt = static_cast<uint32_t>(m_textures.size());
 
     // Camera matrices
     m_descSetLayoutBind.addBinding(SceneBindings::eGlobals, VK_DESCRIPTOR_TYPE_UNIFORM_BUFFER, 1,
                                    VK_SHADER_STAGE_VERTEX_BIT | VK_SHADER_STAGE_RAYGEN_BIT_KHR);
-// Obj descriptions
+    // Obj descriptions
     m_descSetLayoutBind.addBinding(SceneBindings::eObjDescs, VK_DESCRIPTOR_TYPE_STORAGE_BUFFER, 1,
                                    VK_SHADER_STAGE_VERTEX_BIT | VK_SHADER_STAGE_FRAGMENT_BIT | VK_SHADER_STAGE_CLOSEST_HIT_BIT_KHR);
-// Textures
-    m_descSetLayoutBind.addBinding(SceneBindings::eTextures, VK_DESCRIPTOR_TYPE_COMBINED_IMAGE_SAMPLER, nbTxt,
+    // Textures
+     m_descSetLayoutBind.addBinding(SceneBindings::eTextures, VK_DESCRIPTOR_TYPE_COMBINED_IMAGE_SAMPLER, nbTxt,
                                    VK_SHADER_STAGE_FRAGMENT_BIT | VK_SHADER_STAGE_CLOSEST_HIT_BIT_KHR);
 
 
@@ -246,6 +260,14 @@ void HelloRayTracing::createTopLevelAS()
         tlas.emplace_back(rayInst);
         m_rtBuilder.buildTlas(tlas, VK_BUILD_ACCELERATION_STRUCTURE_PREFER_FAST_TRACE_BIT_KHR);
     }
+}
+
+void HelloRayTracing::updateRtDescriptorSet() {
+    // Output buffer
+
+    VkDescriptorImageInfo imageInfo{{},m_offscreenColor.descriptor.imageView,VK_IMAGE_LAYOUT_GENERAL};
+    VkWriteDescriptorSet writeDescriptorSet = m_rtDescSetLayoutBind.makeWrite(m_rtDescSet,RtxBindings::eOutImage,&imageInfo);
+
 }
 
 #endif //VK_RAYTRACING_TUTORIAL_HELLO_RAYTRACING_CPP

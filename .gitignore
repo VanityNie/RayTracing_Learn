@@ -65,3 +65,5 @@ ipch/
 *.sln.docstates
 *.json
 *.log
+ray_travel/cmake-build-debug/build.ninja
+
