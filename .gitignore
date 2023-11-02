@@ -67,3 +67,4 @@ ipch/
 *.log
 ray_travel/cmake-build-debug/build.ninja
 
+ray_travel/cmake-build-debug/build.ninja
